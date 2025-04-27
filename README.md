@@ -25,7 +25,11 @@
 3. Sentiment Analysis:
 - Apply VADER Sentiment Analyzer to classify reviews as Positive, Neutral, or Negative.
 - Explore sentiment trends across different locations and business types.
-4. Findings and Insights:
+4. Topic Modeling with BERTopic:
+- Use BERTopic to uncover main discussion topics in Yelp reviews.
+- Visualize the top topics such as Parks, Trails, Zoos, Beaches, Dog Parks, and Customer Service issues.
+- Extract meaningful business insights based on common themes.
+5. Findings and Insights:
 - Top-rated and most-reviewed states identified.
 - Key customer concerns extracted.
 - Business recommendations based on sentiment patterns.
@@ -38,6 +42,8 @@
 - Clone this repository or download the code.
 - Make sure you have the required libraries installed:
   - pip install pandas numpy nltk matplotlib seaborn vaderSentiment
+  - pip install bertopic
+  - pip install sentence-transformers
 - Download the Yelp Open Dataset and convert business.json and review.json into CSVs.
 - Place business.csv and review.csv in the project directory.
 - Run the Jupyter Notebook: Outdoor_Activities_Final_Code.ipynb.
@@ -49,4 +55,5 @@
 - Python
 - Pandas, NumPy - Data manipulation
 - NLTK, VADER - NLP and Sentiment Analysis
+- BERTopic - Topic Modeling and Thematic Clustering
 - Matplotlib, Seaborn - Visualization
